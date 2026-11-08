@@ -58,6 +58,40 @@
   .contact p{color:#c9d4d6;font-family:Helvetica,Arial,sans-serif;font-size:15px;max-width:640px}
   .contact .cta{margin-top:20px}
   footer{padding:30px 0 46px;color:var(--muted);font-family:Helvetica,Arial,sans-serif;font-size:13.5px;border-top:1px solid var(--line);margin-top:12px}
+  .demo-wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;margin:22px 0}
+  .demo-dash{background:#0d0f16;border-radius:12px;overflow:hidden;color:#f1f1f1;display:flex;min-height:340px}
+  .demo-side{background:#12141d;width:118px;flex:none;padding:12px 8px;font-family:Helvetica,Arial,sans-serif}
+  .demo-logo{font-size:12px;font-weight:bold;color:#fff;padding:2px 6px 10px}
+  .demo-logo span{color:#9aa0b0;font-weight:normal}
+  .demo-mi{font-size:11px;color:#9aa0b0;padding:5px 6px;border-radius:6px}
+  .demo-mi.on{background:#232838;color:#fff}
+  .demo-adv{font-size:9px;letter-spacing:1px;color:#6b7186;padding:10px 6px 4px}
+  .demo-main{flex:1;padding:14px;min-width:0}
+  .demo-main h3{margin:0;font-size:17px;color:#fff;font-family:Helvetica,Arial,sans-serif}
+  .demo-sub{font-size:11px;color:#9aa0b0;font-family:Helvetica,Arial,sans-serif;margin:3px 0 12px}
+  .demo-card{background:#1a1d29;border:1px solid #2a2e3d;border-radius:10px;padding:12px;margin-bottom:10px}
+  .demo-card label{display:block;font-size:11px;font-family:Helvetica,Arial,sans-serif;color:#9aa0b0;margin-bottom:5px}
+  .demo-card input{width:100%;box-sizing:border-box;padding:8px 10px;border:1px solid #2a2e3d;border-radius:8px;background:#0d0f16;color:#fff;font-size:13px;font-family:Helvetica,Arial,sans-serif}
+  .demo-card input:focus{outline:2px solid #8b5cf6}
+  .demo-stockrow{display:flex;align-items:center;justify-content:space-between;gap:8px;font-family:Helvetica,Arial,sans-serif;font-size:12.5px;color:#f1f1f1}
+  .demo-muted{color:#9aa0b0;font-size:11.5px}
+  .demo-btn{border:1px solid #2a2e3d;background:#232838;color:#fff;border-radius:999px;padding:7px 12px;font-size:12px;font-family:Helvetica,Arial,sans-serif;cursor:pointer}
+  .demo-btn.primary{background:#8b5cf6;border-color:#8b5cf6}
+  .demo-prevwrap h3{font-size:17px;font-family:Helvetica,Arial,sans-serif;margin:0 0 4px}
+  .demo-lbl{font-size:12px;font-family:Helvetica,Arial,sans-serif;color:var(--muted);margin:0 0 10px}
+  .demo-preview{background:#f6f1e7;border:1px solid #e3ddd0;border-radius:12px;overflow:hidden;color:#17323b}
+  .demo-bar{background:#17323b;color:#f3efe6;font-size:11px;font-family:Helvetica,Arial,sans-serif;padding:6px 10px}
+  .demo-shop{padding:12px 12px 4px;font-size:17px;font-weight:bold}
+  .demo-banner{background:#0f766e;color:#fff;font-size:13px;font-family:Helvetica,Arial,sans-serif;padding:8px 12px;margin:8px 12px 0;border-radius:8px}
+  .demo-timing{font-size:12px;font-family:Helvetica,Arial,sans-serif;color:#5b6b72;padding:8px 12px 0}
+  .demo-prod{background:#fff;border:1px solid #e3ddd0;border-radius:10px;margin:10px 12px 12px;padding:10px 12px;font-family:Helvetica,Arial,sans-serif}
+  .demo-prod b{font-size:14px}
+  .demo-price{font-size:13px;color:#5b6b72;margin-top:2px}
+  .demo-badge{display:inline-block;font-size:11.5px;font-weight:bold;border-radius:999px;padding:3px 9px;margin-top:6px}
+  .demo-badge.ok{background:#e6f4ea;color:#137333}
+  .demo-badge.low{background:#fef3c7;color:#92400e}
+  .demo-badge.out{background:#f1f1f1;color:#666}
+  @media(max-width:640px){.demo-wrap{grid-template-columns:1fr}}
   @media(max-width:640px){.hero h1{font-size:32px}.band ul{columns:1}}
 </style>
 </head>
@@ -98,12 +132,45 @@
   </section>
 
   <section>
-    <h2>No website to manage. No professional to call.</h2>
-    <p class="sub">A website is a second job nobody told you about. A shopkeeper who is not technical cannot run it: every new product has to be added by hand, every price change and every small line edit needs a professional — a wait, and a bill, for a five-minute change. Counterrow's shop website is built from the stock the shopkeeper already entered. There is nothing extra to manage.</p>
-    <div class="grid">
-      <div class="card"><h3>Add a product once</h3><p>Enter it in the dashboard, where you already do billing. It appears on your website by itself — no second entry, no web work, nobody to hire.</p></div>
-      <div class="card"><h3>Change a price once</h3><p>One edit in the dashboard updates the website and the counter together. No one to call, no waiting for a developer to find time.</p></div>
-      <div class="card"><h3>Edit a line yourself</h3><p>Shop name, timings, a notice — change it on a plain screen, in your own words. No code, no professional, no bill for a five-minute change.</p></div>
+    <h2>A website should not be a second shop to run.</h2>
+    <p class="sub">A shopkeeper who gets a website made gets a second job: products added by hand, prices changed twice, every small edit needs a professional — a wait and a bill. And the worst part: the website never knows what is actually in stock, so customers order things the shop no longer has.</p>
+    <p class="sub">Counterrow has one record. Add a product once in the dashboard and it appears on the website. Change a price once and it changes everywhere. And stock is always true — a sale at the counter deducts stock at once, so the website never sells what the shop does not have. No code, no professional, no monthly bill.</p>
+    <div class="demo-wrap">
+      <div class="demo-dash">
+        <div class="demo-side">
+          <div class="demo-logo">Counterrow<br><span>Your Shop</span></div>
+          <div class="demo-mi">Home</div>
+          <div class="demo-mi">Orders &amp; Sales</div>
+          <div class="demo-mi">Inventory</div>
+          <div class="demo-mi">Attention Center</div>
+          <div class="demo-adv">ADVANCED</div>
+          <div class="demo-mi on">Storefront Theme</div>
+          <div class="demo-mi">Settings</div>
+        </div>
+        <div class="demo-main">
+          <h3>Your Shop</h3>
+          <div class="demo-sub">Type a line — it appears on your website.</div>
+          <div class="demo-card"><label>Shop notice</label><input id="in-notice" type="text" value="Eid Sale — 20% off all lawn"></div>
+          <div class="demo-card"><label>Shop timings</label><input id="in-timing" type="text" value="Open 9am – 9pm, 7 days"></div>
+          <div class="demo-card"><div class="demo-stockrow"><span>Lawn Suit — Rs 2,900<br><span class="demo-muted">Stock in shop: <b id="stock-n">5</b></span></span><span><button class="demo-btn primary" id="btn-sell">Sell one at the counter</button> <button class="demo-btn" id="btn-restock">Restock</button></span></div></div>
+        </div>
+      </div>
+      <div class="demo-prevwrap">
+        <h3>Website preview</h3>
+        <p class="demo-lbl">Updates live — this is what the customer sees.</p>
+        <div class="demo-preview">
+          <div class="demo-bar">www.sundusclothcenter.com</div>
+          <div class="demo-shop">Sundus Cloth Center</div>
+          <div class="demo-banner" id="pv-notice">Eid Sale — 20% off all lawn</div>
+          <div class="demo-timing" id="pv-timing">Open 9am – 9pm, 7 days</div>
+          <div class="demo-prod"><b>Lawn Suit</b><div class="demo-price">Rs 2,900</div><span class="demo-badge ok" id="pv-badge">In stock</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid" style="margin-top:16px">
+      <div class="card"><h3>One entry, everywhere</h3><p>Add the product once, and it shows on the website, the counter, and WhatsApp.</p></div>
+      <div class="card"><h3>Stock always true</h3><p>Sold at the counter means gone on the website too. No customer ever orders what the shop does not have.</p></div>
+      <div class="card"><h3>Your words, no code</h3><p>Timings and notices in a plain box. If you can write a WhatsApp message, you can run your website.</p></div>
     </div>
   </section>
 
@@ -176,5 +243,25 @@
     Counterrow · Founded by Maaz · Kabirwala, Pakistan · Starting with Pakistan's independent retailers, expanding across Asia &amp; the Middle East.
   </footer>
 </div>
+<script>
+(function(){
+  var notice=document.getElementById('in-notice'), timing=document.getElementById('in-timing'),
+      stockN=document.getElementById('stock-n'), pvNotice=document.getElementById('pv-notice'),
+      pvTiming=document.getElementById('pv-timing'), badge=document.getElementById('pv-badge'),
+      stock=5;
+  function render(){
+    pvNotice.textContent=notice.value||"—"; pvTiming.textContent=timing.value||"—";
+    stockN.textContent=stock;
+    if(stock>2){badge.textContent="In stock";badge.className="demo-badge ok";}
+    else if(stock>0){badge.textContent="Only "+stock+" left";badge.className="demo-badge low";}
+    else{badge.textContent="Out of stock";badge.className="demo-badge out";}
+  }
+  notice.addEventListener('input',render);
+  timing.addEventListener('input',render);
+  document.getElementById('btn-sell').addEventListener('click',function(){stock=Math.max(0,stock-1);render();});
+  document.getElementById('btn-restock').addEventListener('click',function(){stock=5;render();});
+  render();
+})();
+</script>
 </body>
 </html>
